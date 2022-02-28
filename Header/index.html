@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>header</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="bg.jpg" class="banner">
+		<a href="" class="logo"><img src="logo.png"></a>
+		<nav>
+			<ul>
+				 <li><a href="#" class="active">Home</a></li>
+				 <li><a href="#">About</a></li>
+				 <li><a href="#">Team</a></li>
+				 <li><a href="#">Contact</a></li>
+				 <li><a href="#">Image</a></li>
+				 <li><a href="#">Services</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<h2>Nejaky text</h2>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur sequi itaque veniam quo odit, assumenda, neque fugiat necessitatibus pariatur. Illum quidem culpa, tempore quae maxime nobis eveniet reiciendis aperiam ducimus!<br><br>
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente saepe rem eaque iure porro facere suscipit dolor praesentium, ipsam, magni soluta ea, fuga mollitia fugiat! Quos odio neque earum, rem.<br><br>
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum tenetur nisi labore doloribus voluptatibus, iste cum vitae harum quibusdam, aliquid, laborum deleniti sapiente sint quae libero debitis nulla nemo facilis.<br><br>
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quasi necessitatibus, optio quas accusantium architecto obcaecati consequatur culpa! Et nihil animi doloribus perferendis, dolore veniam ipsum ab, ut corporis qui.</p>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop();
+			if (scroll > 0){
+				$("header").addClass('scrolled');
+			}
+			else{
+				$("header").removeClass('scrolled');
+			}
+		})
+	</script>
+</body>
+</html>

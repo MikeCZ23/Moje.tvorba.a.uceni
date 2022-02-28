@@ -1,0 +1,62 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container .box{
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: #101010;
+  box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,.2);
+  transition: 1s ease-in-out;
+}
+
+.container .box:hover{
+  background: #000;
+  transition: 0s ease-in-out;
+}
+
+.container .box:hover:nth-child(9n + 1){
+  background: #00a8ff;
+
+}
+
+.container .box:hover:nth-child(9n + 2){
+  background: #9c88ff;
+}
+
+.container .box:hover:nth-child(9n + 3){
+  background: #fbc531;
+}
+
+.container .box:hover:nth-child(9n + 4){
+  background: #4cd137;
+}
+
+.container .box:hover:nth-child(9n + 5){
+  background: #487eb0;
+}
+
+.container .box:hover:nth-child(9n + 6){
+  background: #e84118;
+}
+
+.container .box:hover:nth-child(9n + 7){
+  background: #7ed6df;
+}
+
+.container .box:hover:nth-child(9n + 8){
+  background: #e056fd;
+}
+
+.container .box:hover:nth-child(9n + 9){
+  background: #686de0;
+}

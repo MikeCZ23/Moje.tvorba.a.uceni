@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	overflow: hidden;
+	height: 100vh;
+	background: url(bg.jpg) 50%/ cover;
+	background-size: cover;
+}
+
+h2{
+	color: white;
+	mix-blend-mode: overlay;
+	font: 900 25vmin/30vh impact;
+	text-align: center;
+	outline: none;
+	margin-top: 280px;
+}

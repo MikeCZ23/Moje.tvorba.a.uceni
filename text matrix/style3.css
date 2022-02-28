@@ -1,0 +1,54 @@
+body{
+	background-color: #000;
+	color: #00ff00;
+	font-family: "Consolas";
+	text-shadow: 0 0 4px #00ff00;
+}
+
+.container{
+	margin: 25px 50px;
+}
+
+p{
+	font-size 18px;
+	white-space: nowrap;
+	width: 100%;
+	animation: typing 5s steps(60, end);
+	overflow: hidden;
+}
+
+@keyframes typing{
+	from{
+		width: 0;
+	}
+}
+
+p:nth-child(2){
+	animation: typingtwo 10s steps(60, end);
+}
+
+@keyframes typingtwo{
+	0%{
+		width: 0;
+	}
+	50%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+.emoji{
+	text-shadow: none;
+}
+
+.cursor{
+	animation: blink .6s infinite;
+}
+
+@keyframes blink{
+	to{
+		opacity: 0;
+	}
+}

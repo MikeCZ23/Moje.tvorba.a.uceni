@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>textimonials section using owl carousel and css</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section id="client">
+        <div class="container-fluid testimonial-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title">
+                        <br><br>
+                        <h1 class="text-center">NICE TESTIMONIAL</h1>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-sm-12 align-items-center">
+                    <div class="owl-testimonial owl-carousel owl-theme">
+                        <div class="testimonial-item  text-center">
+                            <div class="testimonial-box">
+                                <div class="testimonial-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum distinctio asperiores temporibus quas, omnis nostrum ad. Veniam quas fugiat natus dignissimos adipisci, reiciendis magnam. Repudiandae saepe vitae alias earum, doloremque?</p>
+                                    <span class="testimonial-date">
+                                        January 20, 2019
+                                    </span>
+                                    <span class="testimonial-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="testimonial-photo">
+                            <img src="team-1.jpg" alt="">
+                            </div>
+                            <h5 class="text-capitalize">
+                                Robin T Hogy
+                            </h5>
+                            <p>
+                                Businessman
+                            </p>
+                        </div>
+                        
+                        <div class="testimonial-item  text-center">
+                            <div class="testimonial-box">
+                                <div class="testimonial-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum distinctio asperiores temporibus quas, omnis nostrum ad. Veniam quas fugiat natus dignissimos adipisci, reiciendis magnam. Repudiandae saepe vitae alias earum, doloremque?</p>
+                                    <span class="testimonial-date">
+                                        January 20, 2019
+                                    </span>
+                                    <span class="testimonial-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="testimonial-photo">
+                            <img src="team-2.jpg" alt="">
+                            </div>
+                            <h5 class="text-capitalize">
+                                Robin T Hogy
+                            </h5>
+                            <p>
+                                Businessman
+                            </p>
+                        </div>
+                        
+                        <div class="testimonial-item  text-center">
+                            <div class="testimonial-box">
+                                <div class="testimonial-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum distinctio asperiores temporibus quas, omnis nostrum ad. Veniam quas fugiat natus dignissimos adipisci, reiciendis magnam. Repudiandae saepe vitae alias earum, doloremque?</p>
+                                    <span class="testimonial-date">
+                                        January 20, 2019
+                                    </span>
+                                    <span class="testimonial-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="testimonial-photo">
+                            <img src="team-3.jpg" alt="">
+                            </div>
+                            <h5 class="text-capitalize">
+                                Robin T Hogy
+                            </h5>
+                            <p>
+                                Web Designer
+                            </p>
+                        </div>
+                        
+                        <div class="testimonial-item  text-center">
+                            <div class="testimonial-box">
+                                <div class="testimonial-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum distinctio asperiores temporibus quas, omnis nostrum ad. Veniam quas fugiat natus dignissimos adipisci, reiciendis magnam. Repudiandae saepe vitae alias earum, doloremque?</p>
+                                    <span class="testimonial-date">
+                                        January 20, 2019
+                                    </span>
+                                    <span class="testimonial-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="testimonial-photo">
+                            <img src="team-4.jpg" alt="">
+                            </div>
+                            <h5 class="text-capitalize">
+                                Robin T Hogy
+                            </h5>
+                            <p>
+                                Analytics Tech
+                            </p>
+                        </div>
+                        
+                        <div class="testimonial-item  text-center">
+                            <div class="testimonial-box">
+                                <div class="testimonial-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum distinctio asperiores temporibus quas, omnis nostrum ad. Veniam quas fugiat natus dignissimos adipisci, reiciendis magnam. Repudiandae saepe vitae alias earum, doloremque?</p>
+                                    <span class="testimonial-date">
+                                        January 20, 2019
+                                    </span>
+                                    <span class="testimonial-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="testimonial-photo">
+                            <img src="team-5.jpg" alt="">
+                            </div>
+                            <h5 class="text-capitalize">
+                                Robin T Hogy
+                            </h5>
+                            <p>
+                                SEO Specialist
+                            </p>
+                        </div>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+        $(function(){
+   
+     if ($("body").hasClass("rtl-layout")) {
+        $(".owl-team").owlCarousel({
+            items: 3,
+            margin: 30,
+            dots: true,
+            nav: true,
+            loop: true,
+            autoplay: true,
+            smartSpeed: 1000,
+            navSpeed: true,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            rtl: callback,
+            responsive: {
+                992: {
+                    items: 4,
+                },
+                600: {
+                    items: 2,
+                },
+                320: {
+                    items: 1,
+                },
+            }
+        });
+        $(".owl-testimonial").owlCarousel({
+            autoplay: 1000,
+            smartSpeed: 1500,
+            margin: 30,
+            slideBy: 1,
+            autoplayHoverPause: true,
+            loop: true,
+            dots: true,
+            nav: true,
+            rtl: callback,
+            responsive: {
+                1200: {
+                    items: 4
+                },
+                992: {
+                    items: 3
+                },
+                600: {
+                    items: 2
+                },
+                320: {
+                    items: 1
+                },
+            }
+        });
+    }
+
+    /* Testimonial One */
+    $(".owl-testimonial").owlCarousel({
+        autoplay: 1000,
+        smartSpeed: 1500,
+        margin: 30,
+        slideBy: 1,
+        autoplayHoverPause: true,
+        loop: true,
+        dots: true,
+        nav: true,
+        responsive: {
+            1200: {
+                items: 4
+            },
+            992: {
+                items: 3
+            },
+            600: {
+                items: 2
+            },
+            320: {
+                items: 1
+            },
+        }
+    });
+    });
+    </script>
+    
+</body>
+</html>

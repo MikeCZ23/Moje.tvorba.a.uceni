@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scrollbar</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+	<div id="progressbar"></div>
+	<div id="scrollPath"></div>
+	<section>
+		<h2>Creative page scroll bar</h2>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec quis nibh at felis congue commodo. Donec vitae arcu. Nullam eget nisl. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Nunc dapibus tortor vel mi dapibus sollicitudin. Maecenas sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Aenean fermentum risus id tortor. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Aliquam in lorem sit amet leo accumsan lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Duis pulvinar. Sed convallis magna eu sem.
+		<br><br>
+		Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Integer imperdiet lectus quis justo. Phasellus et lorem id felis nonummy placerat. Duis risus. Etiam bibendum elit eget erat. Aliquam ante. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Praesent in mauris eu tortor porttitor accumsan. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Praesent vitae arcu tempor neque lacinia pretium. Maecenas aliquet accumsan leo. Nunc dapibus tortor vel mi dapibus sollicitudin.
+		<br><br>
+		Etiam dictum tincidunt diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Integer imperdiet lectus quis justo. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis condimentum augue id magna semper rutrum. Praesent vitae arcu tempor neque lacinia pretium. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam faucibus mi quis velit. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Aenean fermentum risus id tortor. Proin mattis lacinia justo. Nulla est. Vestibulum fermentum tortor id mi.
+		<br><br>
+		Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Integer in sapien. Fusce nibh. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Donec vitae arcu. Suspendisse nisl. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus.
+		<br><br>
+		Nullam sit amet magna in magna gravida vehicula. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur sagittis hendrerit ante. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Nam sed tellus id magna elementum tincidunt. Aliquam id dolor. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Aenean placerat. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Vivamus luctus egestas leo. Aenean placerat. Vestibulum fermentum tortor id mi. Maecenas sollicitudin. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent vitae arcu tempor neque lacinia pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce consectetuer risus a nunc.
+		<br><br>
+		Vestibulum fermentum tortor id mi. Nam quis nulla. Fusce suscipit libero eget elit. Maecenas lorem. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Nullam rhoncus aliquam metus. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Vivamus luctus egestas leo. Nulla pulvinar eleifend sem. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Quisque porta. Integer in sapien. Etiam egestas wisi a erat. Praesent id justo in neque elementum ultrices. Nulla non lectus sed nisl molestie malesuada. Nunc tincidunt ante vitae massa. Etiam commodo dui eget wisi. Aliquam erat volutpat.</p>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop(),
+			dh = $(document).height(),
+			wh = $(window).height();
+			scrollPercent = (scroll / (dh-wh)) * 100;
+			$('#progressbar').css('height', scrollPercent + '%');
+		})
+	</script>  <!-- BEZ ANIMACE -->
+	<!-- <script type="text/javascript">
+		let progress = document.getElementById('progressbar');
+		let totalHeight = document.body.scrollHeight - window.innerHeight;
+		window.onscroll = function(){
+			let progressHeight = (window.pageYOffset / totalHeight) * 100;
+			progress.style.height = progressHeight + "%";
+		}
+	</script> -->
+</body>
+</html>
